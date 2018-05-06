@@ -16,7 +16,17 @@ public class NewActivity extends AppCompatActivity {
     }
     public void backbtnClick(View v){
         Toast.makeText(getApplicationContext(),"되돌아가기 버튼이 눌렸습니다.",Toast.LENGTH_LONG);
-        finish(); //이전 화면 돌아가기
+        finish(); //메인 화면 돌아가기
     }
 
 }
+
+
+
+
+
+
+
+
+
+
