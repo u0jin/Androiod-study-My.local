@@ -12,10 +12,13 @@ public class update extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.update);
     }
-    public void backBtnClick(View v){
+    public void closeBtnClick(View v){
         Toast.makeText(getApplicationContext(),"되돌아가기 버튼이 눌렸습니다.",Toast.LENGTH_LONG);
         finish(); //이전 화면 돌아가기
 
+    }
+    public void BreakfastBtnClick(View v){
+        setContentView(R.layout.breakfast);
     }
 
 }

@@ -7,4 +7,27 @@
     android:layout_height="match_parent"
     tools:context=".Breakfast">
 
+    <TextView
+        android:id="@+id/breakfastTextView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/black"
+        android:text="                              아침"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="50dp"
+        android:layout_height="33dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:onClick="backBtnClick"
+        android:src="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+
+
+
+
 </RelativeLayout>
