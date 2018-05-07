@@ -30,9 +30,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/editText1"
-        android:text="Input"
+
         android:inputType="textAutoCorrect"
         android:hint="Please input your name"
+
         />
     <Button
         android:layout_width="wrap_content"
