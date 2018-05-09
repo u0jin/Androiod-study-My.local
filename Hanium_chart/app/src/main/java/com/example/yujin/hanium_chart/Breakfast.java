@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Toast;
 
 public class Breakfast extends AppCompatActivity {
 
@@ -11,13 +12,12 @@ public class Breakfast extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.breakfast);
+
+
     }
 
-
     public void backBtnClick(View v){
-        Intent myIntent=new Intent(this,update.class);
-        startActivity(myIntent);
-        finish();
+        Toast.makeText(this, "Back button pressed.", Toast.LENGTH_SHORT).show();
 
     }
 
