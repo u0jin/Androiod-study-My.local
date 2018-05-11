@@ -13,12 +13,11 @@ public class Breakfast extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.breakfast);
 
-
     }
 
-    public void backBtnClick(View v){
-        Toast.makeText(this, "Back button pressed.", Toast.LENGTH_SHORT).show();
-
+    public void backBtn(View v){
+        Intent myIntent=new Intent(getApplicationContext(),update.class);
+        startActivity(myIntent);
     }
 
 

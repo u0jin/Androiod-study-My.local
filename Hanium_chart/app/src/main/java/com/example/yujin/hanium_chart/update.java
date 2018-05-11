@@ -1,5 +1,6 @@
 package com.example.yujin.hanium_chart;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -13,12 +14,14 @@ public class update extends AppCompatActivity {
         setContentView(R.layout.update);
     }
     public void closeBtnClick(View v){
-        Toast.makeText(getApplicationContext(),"되돌아가기 버튼이 눌렸습니다.",Toast.LENGTH_LONG);
-        finish(); //이전 화면 돌아가기
+        Intent myIntent=new Intent(getApplicationContext(),MainActivity.class);
+        startActivity(myIntent);
 
     }
     public void BreakfastBtnClick(View v){
-        setContentView(R.layout.breakfast);
+        Intent myIntent=new Intent(getApplicationContext(),Breakfast.class);
+        startActivity(myIntent);
+      
     }
 
 }

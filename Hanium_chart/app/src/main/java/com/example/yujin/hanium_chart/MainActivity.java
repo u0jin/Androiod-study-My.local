@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     public void updateBtn(View v){
         Intent myIntent=new Intent(getApplicationContext(),update.class);
         startActivity(myIntent);
-        finish();
+
     }
 
 }

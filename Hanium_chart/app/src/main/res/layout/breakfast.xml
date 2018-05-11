@@ -24,8 +24,62 @@
         android:layout_height="33dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:onClick="backBtnClick"
-        android:src="@drawable/ic_keyboard_arrow_left_black_24dp" />
+        android:onClick="backBtn"
+        android:background="@drawable/backbtn_action"
+        android:src="@drawable/backbtn_action" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="530dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:orientation="horizontal"
+            android:background="@drawable/black">
+
+            <TextView
+                android:id="@+id/mealTypeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" 식사종류   "
+                android:textSize="20dp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="가정식" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="외식" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="식사 안함" />
+
+
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
 
 
 </RelativeLayout>
