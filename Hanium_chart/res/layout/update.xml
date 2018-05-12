@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".update">
+
+    <TextView
+        android:id="@+id/updateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/black"
+        android:text=" 식사"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <ImageButton
+        android:id="@+id/closeBtn"
+        android:layout_width="50dp"
+        android:layout_height="33dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:onClick="closeBtnClick"
+        android:src="@drawable/ic_close_black_24dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="452dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/BreakfastPhotoBtn"
+                android:layout_width="186dp"
+                android:layout_height="129dp"
+                android:layout_weight="1"
+
+                android:text="사진을 넣어주세요">
+
+            </Button>
+
+            <Button
+                android:id="@+id/BreakfastBtn"
+                android:layout_width="198dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="BreakfastBtnClick"
+                android:text="+ 아침식사를 입력해주세요">
+
+            </Button>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/LunchPhotoBtn"
+                android:layout_width="186dp"
+                android:layout_height="129dp"
+                android:layout_weight="1"
+                android:text="사진을 넣어주세요">
+
+            </Button>
+
+            <Button
+                android:id="@+id/LunchBtn"
+                android:layout_width="198dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="+ 점심식사를 입력해주세요">
+
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/DinnerPhotoBtn"
+                android:layout_width="186dp"
+                android:layout_height="129dp"
+                android:layout_weight="1"
+                android:text="사진을 넣어주세요">
+
+            </Button>
+
+            <Button
+                android:id="@+id/DinnerBtn"
+                android:layout_width="198dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="+  저녁식사를 입력해주세요">
+
+            </Button>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/SnackBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+ 간식추가" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
